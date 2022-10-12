@@ -19,7 +19,7 @@ public class POC2_1 implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("MP_MAX_PRICE")
 	private java.lang.Integer mp_max_price;
 	@org.kie.api.definition.type.Label("level")
-	private java.lang.Integer level;
+	int level;
 	@org.kie.api.definition.type.Label("Request status")
 	private boolean status;
 	public POC2_1() {
@@ -66,7 +66,7 @@ public class POC2_1 implements java.io.Serializable {
 		this.mp_max_price = mp_max_price ;
 	}
 	
-	public java.lang.Integer getlevel() {
+	public int getlevel() {
 	    level = 4;
 	    System.out.println("Get level:"+level);
 		return this.level;
