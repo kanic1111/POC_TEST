@@ -84,6 +84,7 @@ public class POC2_1 implements java.io.Serializable {
 	}
 
 	public void setStatus(boolean status) {
+	    System.out.println(status);
 		this.status = status;
 	}
 	
