@@ -43,7 +43,7 @@ public class POC2_1 implements java.io.Serializable {
 		return this.ap_price;
 	}
 
-	public void setAp_price(java.lang.Integer ap_price) {
+	public void setap_price(java.lang.Integer ap_price) {
 	   // System.out.println(Ap_price);
 	   // ap_price = 4000;
 	   System.out.println("Set price:"+ap_price_percent);
@@ -55,7 +55,7 @@ public class POC2_1 implements java.io.Serializable {
 		return this.mp_max_price;
 	}
 
-	public void setMp_max_price(java.lang.Integer mp_max_price) {
+	public void setmp_max_price(java.lang.Integer mp_max_price) {
 	    System.out.println("Set mp_price:"+ap_price_percent);
 	   // System.out.println(mp_max_price);
 	   // mp_max_price = 500
@@ -70,7 +70,7 @@ public class POC2_1 implements java.io.Serializable {
 	public void setlevel(java.lang.Integer level) {
 	   // level = 4
 	    System.out.println("Set level:"+ap_price_percent);
-	    System.out.println(level);
+	   // System.out.println(level);
 		this.level = 4;
 	}
 
