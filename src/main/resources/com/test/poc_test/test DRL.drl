@@ -1,2 +1,11 @@
 package com.test.poc_test;
 
+import com.test.poc_test.POC2_1;
+
+rule "test"
+    when
+        $POC : POC2_1(ap_price > 3000 && level < 5)
+    then
+        $POC.setStatus(true);
+        // update($s);
+end
