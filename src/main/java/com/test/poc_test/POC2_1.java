@@ -43,7 +43,8 @@ public class POC2_1 implements java.io.Serializable {
 
 	public void setAp_price(java.lang.Integer ap_price) {
 	   // System.out.println(Ap_price);
-		this.ap_price = 4000;
+	    ap_price = 4000
+		this.ap_price = ap_price;
 	}
 	
 	public java.lang.Integer getmp_max_price() {
