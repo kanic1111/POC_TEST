@@ -13,55 +13,55 @@ public class POC2_1 implements java.io.Serializable {
 	static final long serialVersionUID = 1;
 
 	@org.kie.api.definition.type.Label("AP_price_percent")
-	private java.lang.Float ap_price_percent;
+	private java.lang.Double ap_price_percent;
 	@org.kie.api.definition.type.Label("Ap_price")
-	private java.lang.Long ap_price;
+	private java.lang.Integer ap_price;
 	@org.kie.api.definition.type.Label("MP_MAX_PRICE")
-	private java.lang.Long mp_max_price;
+	private java.lang.Integer mp_max_price;
 	@org.kie.api.definition.type.Label("level")
-	private java.lang.Long level;
+	private java.lang.Integer level;
 	@org.kie.api.definition.type.Label("Request status")
 	private boolean status;
 	public POC2_1() {
 	}
 
-	public java.lang.Float getap_price_percent() {
+	public java.lang.Double getap_price_percent() {
 	   // System.out.println(AP_price_percent);
 		return this.ap_price_percent;
 	}
 
-	public void setap_price_percent(java.lang.Float ap_price_percent) {
+	public void setap_price_percent(java.lang.Double ap_price_percent) {
 	    System.out.println(ap_price_percent);
-		this.ap_price_percent = ap_price_percent;
+		this.ap_price_percent = 0.9;
 	}
 	
-	public java.lang.Long getap_price() {
+	public java.lang.Integer getap_price() {
 	   // System.out.println(customerId);
 	   System.out.println(ap_price);
 		return this.ap_price;
 	}
 
-	public void setAp_price(java.lang.Long ap_price) {
+	public void setAp_price(java.lang.Integer ap_price) {
 	   // System.out.println(Ap_price);
-		this.ap_price = ap_price;
+		this.ap_price = 4000;
 	}
 	
-	public java.lang.Long getmp_max_price() {
+	public java.lang.Integer getmp_max_price() {
 		return this.mp_max_price;
 	}
 
-	public void setMp_max_price(java.lang.Long mp_max_price) {
+	public void setMp_max_price(java.lang.Integer mp_max_price) {
 	    System.out.println(mp_max_price);
-		this.mp_max_price = mp_max_price;
+		this.mp_max_price = 500;
 	}
 	
-	public java.lang.Long getlevel() {
+	public java.lang.Integer getlevel() {
 		return this.level;
 	}
 
-	public void setlevel(java.lang.Long level) {
+	public void setlevel(java.lang.Integer level) {
 	    System.out.println(level);
-		this.level = level;
+		this.level = 4;
 	}
 
 	public boolean isStatus() {
@@ -72,15 +72,15 @@ public class POC2_1 implements java.io.Serializable {
 		this.status = status;
 	}
 	
-	public POC2_1(java.lang.Float ap_price_percent,
-	        java.lang.Long ap_price,
-	        java.lang.Long mp_max_price,
-	        java.lang.Long level,boolean status) {
-//         this.level = level;
-//         this.ap_price_percent = ap_price_percent;
-//         this.ap_price = ap_price;
-//         this.mp_max_price = mp_max_price;
-// 		this.status = status;
+	public POC2_1(java.lang.Double ap_price_percent,
+	        java.lang.Integer ap_price,
+	        java.lang.Integer mp_max_price,
+	        java.lang.Integer level,boolean status) {
+        this.level = level;
+        this.ap_price_percent = ap_price_percent;
+        this.ap_price = ap_price;
+        this.mp_max_price = mp_max_price;
+		this.status = status;
 		
 	}
     
