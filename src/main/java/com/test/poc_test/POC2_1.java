@@ -67,7 +67,7 @@ public class POC2_1 implements java.io.Serializable {
 	}
 	
 	public int getlevel() {
-	    level = 4;
+	   // level = 4;
 	    System.out.println("Get level:"+level);
 		return this.level;
 	}
