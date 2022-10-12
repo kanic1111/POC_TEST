@@ -78,7 +78,12 @@ public class POC2_1 implements java.io.Serializable {
 	   // System.out.println(level);
 		this.level = level;
 	}
-
+	public boolean getStatus() {
+	   // level = 4;
+	    System.out.println("Get Status:"+status);
+		return this.status;
+	}
+	
 	public boolean isStatus() {
 		return this.status;
 	}
@@ -88,11 +93,6 @@ public class POC2_1 implements java.io.Serializable {
 		this.status = status;
 	}
 	
-	public boolean getStatus() {
-	   // level = 4;
-	    System.out.println("Get Status:"+status);
-		return this.Status;
-	}
 	
 	public POC2_1(java.lang.Double ap_price_percent,
 	        java.lang.Integer ap_price,
