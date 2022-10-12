@@ -90,7 +90,7 @@ public class POC2_1 implements java.io.Serializable {
 	
 	public boolean getStatus() {
 	   // level = 4;
-	    System.out.println("Get Status:");
+	    System.out.println("Get Status:"+status);
 		return this.Status;
 	}
 	
