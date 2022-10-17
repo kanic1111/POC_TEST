@@ -5,8 +5,8 @@ import java.util.List
 
 rule "POC passed"
     when
-        // $listOfData : List()
-        $POC : POC2_1(ap_price > 3000 && level < 5 && ap_price_percent > 0.8 && mp_max_price < 1000) 
+        $listOfData : List()
+        $POC : POC2_1(ap_price > 3000 && level < 5 && ap_price_percent > 0.8 && mp_max_price < 1000) from $listOfData
     then
         $POC.setStatus(true);
         // update($s);
@@ -14,8 +14,8 @@ end
 
 rule "POC failed"
     when
-        // $listOfData : List()
-        $POC : POC2_1(ap_price <= 3000 || level > 5 || ap_price_percent <= 0.8 || mp_max_price >= 1000)
+        $listOfData : List()
+        $POC : POC2_1(ap_price <= 3000 || level > 5 || ap_price_percent <= 0.8 || mp_max_price >= 1000) from $listOfData
     then
         $POC.setStatus(false);
         // update($s);
