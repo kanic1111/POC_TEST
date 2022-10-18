@@ -69,7 +69,7 @@ public class POC2_1 implements java.io.Serializable {
 	public String getlevel() {
 	   // level = 4;
 	    System.out.println("Get level:"+level);
-		return "三級";
+		return this.level;
 	}
 
 	public void setlevel(java.lang.String level) {
