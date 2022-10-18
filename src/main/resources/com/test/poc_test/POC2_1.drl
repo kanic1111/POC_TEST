@@ -24,7 +24,7 @@ end
 rule "POC failed"
     when
         // $listOfData : List()
-        $POC : POC2_1(ap_price <= 3000 || level == "四com.cedarsoftware.util.ArrayUtilities( )級" || ap_price_percent <= 0.8 || mp_max_price >= 1000) 
+        $POC : POC2_1(ap_price <= 3000 || level == "四級" || ap_price_percent <= 0.8 || mp_max_price >= 1000) 
     then
         $POC.setStatus(false);
         // update($s);
