@@ -18,8 +18,10 @@ public class POC2_1 implements java.io.Serializable {
 	private java.lang.Integer ap_price;
 	@org.kie.api.definition.type.Label("MP_MAX_PRICE")
 	private java.lang.Integer mp_max_price;
+	@org.kie.api.definition.type.Label("test_string")
+	String test_string;
 	@org.kie.api.definition.type.Label("level")
-	String level;
+	int level;
 	@org.kie.api.definition.type.Label("Request status")
 	private boolean status;
 	public POC2_1() {
@@ -66,18 +68,26 @@ public class POC2_1 implements java.io.Serializable {
 		this.mp_max_price = mp_max_price ;
 	}
 	
-	public String getlevel() {
+	public String gettest_string() {
+	    
+		return this.test_string;
+	}
+
+	public void settest_string(java.lang.String test_string) {
+
+		this.test_string = test_string;
+	}
+	public int getlevel() {
 	   // level = 4;
 	    System.out.println("Get level:"+level);
 		return this.level;
 	}
 
-	public void setlevel(java.lang.String level) {
-	   // level = 4
-	   // System.out.println("Set level:"+level);
-	   // System.out.println(level);
+	public void setlevel(java.lang.Integer level) {
+
 		this.level = level;
 	}
+	
 	public boolean getStatus() {
 	   // level = 4;
 	   // System.out.println("Get Status:"+status);
@@ -97,11 +107,12 @@ public class POC2_1 implements java.io.Serializable {
 	public POC2_1(java.lang.Double ap_price_percent,
 	        java.lang.Integer ap_price,
 	        java.lang.Integer mp_max_price,
-	        java.lang.String level,boolean status) {
+	        java.lang.Integer level,boolean status,java.lang.String test_string) {
         this.level = level;
         this.ap_price_percent = ap_price_percent;
         this.ap_price = ap_price;
         this.mp_max_price = mp_max_price;
+        this.test_string = test_string;
 		this.status = status;
 		
 	}
