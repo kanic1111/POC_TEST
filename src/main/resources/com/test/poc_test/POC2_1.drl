@@ -21,6 +21,15 @@ rule "POC passed"
         // update($s);
 end
 
+rule "POC passed2"
+    when
+        // $listOfData : List()
+        $POC : POC2_1(ap_price > 3000 && level  == "3rd" && ap_price_percent > 0.8 && mp_max_price < 1000 )
+    then
+        $POC.setStatus(true);
+        // update($s);
+end
+
 rule "POC failed"
     when
         // $listOfData : List()
