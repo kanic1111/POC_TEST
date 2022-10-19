@@ -2,10 +2,11 @@ package com.test.poc_test;
 
 import com.test.poc_test.POC2_1;
 import java.util.List
+import java.util.ArrayList
 
 rule "POC list"
     when
-        $listOfData : POC2_1()
+        $listOfData : ArrayList()
         $POC : POC2_1(ap_price > 3000 && level == "3" && ap_price_percent > 0.8 && mp_max_price < 1000) from $listOfData
     then
         $POC.setStatus(true);
