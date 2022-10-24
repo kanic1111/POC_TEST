@@ -26,7 +26,7 @@ public class POC2_2 implements java.io.Serializable {
 	private java.lang.Integer age;
 	@org.kie.api.definition.type.Label("Request status")
 	private boolean status;
-	public POC2_1() {
+	public POC2_2() {
 	}
 
 	public double getproduct_price() {
@@ -49,31 +49,31 @@ public class POC2_2 implements java.io.Serializable {
 		this.Agm_price = Agm_price;
 	}
 	
-	public int getap_first() {
+	public boolean getap_first() {
 
 		return this.ap_first;
 	}
 
-	public void setap_first(java.lang.Integer ap_first) {
+	public void setap_first(boolean ap_first) {
 
 		this.ap_first = ap_first;
 	}
 	
-	public String getgp_first() {
+	public boolean getgp_first() {
 	    
 		return this.gp_first;
 	}
 
-	public void setgp_first(java.lang.String gp_first) {
+	public void setgp_first(boolean gp_first) {
 
 		this.gp_first = gp_first;
 	}
-	public int getmp_first() {
+	public boolean getmp_first() {
 
 		return this.mp_first;
 	}
 
-	public void setmp_first(java.lang.Integer mp_first) {
+	public void setmp_first(boolean mp_first) {
 
 		this.mp_first = mp_first;
 	}
