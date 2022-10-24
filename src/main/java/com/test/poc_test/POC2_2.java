@@ -16,12 +16,12 @@ public class POC2_2 implements java.io.Serializable {
 	private java.lang.Double product_price;
 	@org.kie.api.definition.type.Label("AGM price")
 	private java.lang.Integer Agm_price;
-	@org.kie.api.definition.type.Label("AP首購")
-	private boolean ap_first;
-	@org.kie.api.definition.type.Label("GP首購")
-	private boolean gp_first;
-	@org.kie.api.definition.type.Label("MP首購")
-	private boolean mp_first;
+	@org.kie.api.definition.type.Label("購買類型")
+	private java.lang.Integer purchase_type ;
+// 	@org.kie.api.definition.type.Label("GP首購")
+// 	private boolean gp_first;
+// 	@org.kie.api.definition.type.Label("MP首購")
+// 	private boolean mp_first;
 	@org.kie.api.definition.type.Label("age")
 	private java.lang.Integer age;
 	@org.kie.api.definition.type.Label("Request status")
@@ -49,37 +49,16 @@ public class POC2_2 implements java.io.Serializable {
 		this.Agm_price = Agm_price;
 	}
 	
-	public boolean getap_first() {
+	public java.lang.Integer getpurchase_type() {
 
-		return this.ap_first;
+		return this.purchase_type;
 	}
 
-	public void setap_first(boolean ap_first) {
-
-		this.ap_first = ap_first;
-	}
-	
-	public boolean getgp_first() {
-	    
-		return this.gp_first;
-	}
-
-	public void setgp_first(boolean gp_first) {
-
-		this.gp_first = gp_first;
-	}
-	public boolean getmp_first() {
-
-		return this.mp_first;
-	}
-
-	public void setmp_first(boolean mp_first) {
-
-		this.mp_first = mp_first;
+	public void setpurchase_type(java.lang.Integer purchase_type) {
+		this.purchase_type = purchase_type;
 	}
 	
 	public int getage() {
-
 		return this.age;
 	}
 
@@ -106,12 +85,10 @@ public class POC2_2 implements java.io.Serializable {
 	
 	public POC2_2(java.lang.Double product_price,
 	        java.lang.Integer Agm_price,
-	        boolean ap_first,boolean gp_first,boolean mp_first,boolean status,java.lang.Integer age) {
+	        java.lang.Integer purchase_type,boolean status,java.lang.Integer age) {
         this.product_price = product_price;
         this.Agm_price = Agm_price;
-        this.ap_first = ap_first;
-        this.gp_first = gp_first;
-        this.mp_first = mp_first;
+        this.purchase_type = purchase_type;
         this.age = age;
 		this.status = status;
 		
