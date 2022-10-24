@@ -17,11 +17,11 @@ public class POC2_2 implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("AGM price")
 	private java.lang.Integer Agm_price;
 	@org.kie.api.definition.type.Label("AP首購")
-	private java.lang.boolean ap_first;
+	private boolean ap_first;
 	@org.kie.api.definition.type.Label("GP首購")
-	private java.lang.boolean gp_first;
+	private boolean gp_first;
 	@org.kie.api.definition.type.Label("MP首購")
-	private java.lang.boolean mp_first;
+	private boolean mp_first;
 	@org.kie.api.definition.type.Label("age")
 	private java.lang.Integer age;
 	@org.kie.api.definition.type.Label("Request status")
