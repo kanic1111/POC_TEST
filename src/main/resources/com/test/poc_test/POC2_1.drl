@@ -4,7 +4,7 @@ import com.test.poc_test.POC2_1;
 import java.util.List
 import java.util.ArrayList
 
-rule "POC list"
+rule "POC passed"
     when
         $listOfData : ArrayList()
         $POC : POC2_1(ap_price > 3000 && level == "3" && ap_price_percent > 0.8 && mp_max_price < 1000) from $listOfData
@@ -13,29 +13,19 @@ rule "POC list"
         // update($s);
 end
 
-rule "POC passed"
-    when
-        // $listOfData : List()
-        // $POC : POC2_1(ap_price > 3000 && level  matches ".*三級.*" && ap_price_percent > 0.8 && mp_max_price < 1000 )
-        $POC : POC2_1(ap_price > 3000 && level < 5 && ap_price_percent > 0.8 && mp_max_price < 1000 )
-    then
-        $POC.setStatus(true);
-        // update($s);
-end
-
-rule "POC passed2"
-    when
-        // $listOfData : List()
-        $POC : POC2_1(ap_price > 3000 && level  < 5 && ap_price_percent > 0.8 && mp_max_price < 1000 || test_string == "通過")
-    then
-        $POC.setStatus(true);
-        // update($s);
-end
-
 rule "POC failed"
     when
-        // $listOfData : List()
-        $POC : POC2_1(ap_price <= 3000 || level > 6 || ap_price_percent <= 0.8 || mp_max_price >= 1000) 
+        $listOfData : ArrayList()
+        $POC : POC2_1(ap_price <= 3000 || level > 6 || ap_price_percent <= 0.8 || mp_max_price >= 1000) from $listOfData
+    then
+        $POC.setStatus(false);
+        // update($s);
+end
+
+rule "POC NULL"
+    when
+        $listOfData : ArrayList()
+        $POC : POC2_1(ap_price == null || level == null || ap_price_percent == null || mp_max_price == null) from $listOfData
     then
         $POC.setStatus(false);
         // update($s);
