@@ -109,11 +109,12 @@ public class POC2_2 implements java.io.Serializable {
 	        java.lang.boolean ap_first,
 	        java.lang.boolean gp_first,
 	        java.lang.boolean mp_first,boolean status,java.lang.Integer age) {
-        this.product_price = level;
-        this.ap_price_percent = ap_price_percent;
-        this.ap_price = ap_price;
-        this.mp_max_price = mp_max_price;
-        this.test_string = test_string;
+        this.product_price = product_price;
+        this.Agm_price = Agm_price;
+        this.ap_first = ap_first;
+        this.gp_first = gp_first;
+        this.mp_first = mp_first;
+        this.age = age;
 		this.status = status;
 		
 	}
