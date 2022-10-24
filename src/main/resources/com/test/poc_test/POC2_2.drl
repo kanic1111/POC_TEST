@@ -1,2 +1,14 @@
 package com.test.poc_test;
 
+import com.test.poc_test.POC2_2;
+import java.util.List
+import java.util.ArrayList
+
+rule "POC 2_2 passed"
+    when
+        $listOfData : ArrayList()
+        $POC : POC2_2(product_price > 2000 && agm_price > 500 && (purchase_type >= 1 && purchase_type <= 3) && age < 25) from $listOfData
+    then
+        $POC.setStatus(true);
+        // update($s);
+end
